@@ -1,0 +1,16 @@
+<form class="p-5 m-5 bg-secondary-subtle input-group-lg">
+        <div class="mb-3">
+          <label for="peso" class="form-label ">Peso</label>
+          <input type="number" class="form-control" [(ngModel)]="peso"  name="peso">
+        </div>
+        <div class="mb-3">
+          <label for="altura" class="form-label">Altura</label>
+          <input type="number" class="form-control" [(ngModel)]="altura"  name="altura">
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto ">
+            <button class="btn btn-primary" (click)="onClick()">Calcular</button>
+          </div>
+          <div class="mb-3">
+              <label>{{imc}}</label>
+            </div>
+</form>
