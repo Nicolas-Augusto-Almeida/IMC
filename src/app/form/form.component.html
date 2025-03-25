@@ -1,4 +1,4 @@
-<form class="p-5 m-5 bg-secondary-subtle input-group-lg">
+<form class="p-5 m-5 bg-secondary-subtle text-center">
         <div class="mb-3">
           <label for="peso" class="form-label ">Peso</label>
           <input type="number" class="form-control" [(ngModel)]="peso"  name="peso">
@@ -10,7 +10,11 @@
         <div class="d-grid gap-2 col-6 mx-auto ">
             <button class="btn btn-primary" (click)="onClick()">Calcular</button>
           </div>
-          <div class="mb-3">
-              <label>{{imc}}</label>
-            </div>
+        <div class="mb-3">
+              <label>{{text}}{{imc}}{{text2}}</label>
+        </div>
+        <div>
+            <img src="{{image}}" class="img-fluid" alt="">
+        </div>
+        
 </form>
