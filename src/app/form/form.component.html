@@ -11,7 +11,7 @@
             <button class="btn btn-primary" (click)="onClick()">Calcular</button>
           </div>
         <div class="mb-3">
-              <label>{{text}}{{imc}}{{text2}}</label>
+              <label>{{text}}{{imc | number:'1.2-2'}}{{text2}}</label>
         </div>
         <div>
             <img src="{{image}}" class="img-fluid" alt="">

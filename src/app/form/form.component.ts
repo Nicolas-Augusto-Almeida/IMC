@@ -21,7 +21,7 @@ export class FormComponent {
     this.text = 'IMC: '
     if (this.imc < 18.5){
       this.text2 = ' Abaixo do peso'
-      this.image = 'IMC.png'
+      this.image = 'ABAIXO.png'
     }
     if (this.imc >= 18.5 && this.imc <= 24.9 ){
       this.text2 = ' Peso normal'
@@ -33,15 +33,15 @@ export class FormComponent {
     }
     if (this.imc >= 30 && this.imc <= 34.9 ){
       this.text2 = ' Obesidade I'
-      this.image = 'Obesidade_I.png'
+      this.image = 'Obesidade_1.png'
     }
     if (this.imc >= 35 && this.imc <= 39.9 ){
       this.text2 = ' Obesidade II'
-      this.image = 'Obesidade_II.png'
+      this.image = 'Obesidade_2.png'
     }
     if (this.imc >= 40 ){
       this.text2 = ' Obesidade III'
-      this.image = 'Obesidade_III.png'
+      this.image = 'Obesidade_3.png'
     }
   }
 }
